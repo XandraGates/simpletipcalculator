@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Tip Calculator</title>
+        <link rel="stylesheet" href="tipcal.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/button.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Tip Calculator</h1>
+            <div class="form">
+                <label>How much was your bill?</label> <br>
+                <input id="billCost" type="number" name="billCost"> <br>
+                <label>How was your service?</label> <br>
+                <select id="service" name="service" class="ui dropdown">
+                    <option value="5">Excellent</option>
+                    <option value="4">Very Good</option>
+                    <option value="3">Average</option>
+                    <option value="2">Poor</option>
+                    <option value="1">Very Poor</option>
+                </select> <br>
+                <label>How many people are sharing the bill?</label> <br>
+                <input id="people" type="number" name="people"> <br><br>
+                <button id="btn" class="ui secondary button">CALCULATE</button>
+            <p>Each person should contribute: <span id="total"></span></p>
+        </div>
+    </div>
+        <script src="tipcal.js"></script>
+    </body>
+</html>
+
